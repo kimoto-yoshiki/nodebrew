@@ -755,7 +755,7 @@ use Cwd 'abs_path';
 
 sub main {
     my $brew_dir = abs_path($ENV{'NODEBREW_ROOT'} || '/usr/local/bin/.nodebrew');
-    my $nodebrew_url = 'https://raw.github.com/hokaccha/nodebrew/master/nodebrew';
+    my $nodebrew_url = 'https://raw.github.com/kimoto-yoshiki/nodebrew/master/nodebrew';
     my $fetcher_type = `which curl` ? 'curl' :
                        `which wget` ? 'wget' :
                         die 'Need curl or wget';
